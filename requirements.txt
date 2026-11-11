@@ -1,0 +1,6 @@
+# Project Akhir Analisis Algoritme - Kelompok 22
+# Core algorithms only require Python 3.8+ Standard Library (zero external dependencies).
+# The packages below are optional for visualization plots and test runners.
+
+matplotlib>=3.7.0
+pytest>=7.0.0
