@@ -120,6 +120,15 @@ Berikut adalah tabel hasil pengujian waktu eksekusi (detik) untuk mode Counting 
 | 11 | 2.680 | - | 7.854236 | 2.426130 | 1.528669 |
 | 12 | 14.200 | - | 52.865534 | 13.552110 | 8.475574 |
 
+### Grafik Hasil Pengujian:
+![Grafik Waktu Eksekusi](output/benchmark_runtime.png)
+![Grafik Pemangkasan Node](output/benchmark_nodes.png)
+
+### Contoh Solusi Visual:
+| Normal 8-Queens | Custom Diamond Board | Blocked N-Queens (9 Ratu) |
+| :---: | :---: | :---: |
+| ![Normal 8Q](output/demo_normal_8queens.png) | ![Diamond](output/demo_diamond_board.png) | ![Blocked 9Q](output/demo_blocked_9queens.png) |
+
 ### Pembahasan Singkat:
 1. **Pemangkasan Cabang (Pruning):** Pada Brute Force, untuk N = 8 program harus mengecek seluruh 8! = 40.320 kemungkinan susunan. Sedangkan pada Backtracking, cabang yang sudah pasti menyerang langsung dipotong sehingga hanya 2.057 node yang dikunjungi.
 2. **Pengaruh Lookup Array O(1):** Teknik array boolean dari slide kuliah terbukti mempercepat waktu komputasi sekitar 2.5 hingga 4 kali lipat dibanding Standard Backtracking pada N besar karena tidak perlu melakukan perulangan ke baris-baris atas setiap kali menaruh ratu.

@@ -35,9 +35,3 @@ env/
 # OS
 .DS_Store
 Thumbs.db
-
-# Output plots and reports
-output/*.png
-output/*.pdf
-output/*.csv
-!output/.gitkeep
